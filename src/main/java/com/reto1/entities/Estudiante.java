@@ -1,14 +1,7 @@
 package com.reto1.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-@Entity
 public class Estudiante extends Persona{
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private Long numeroEstudiante;
     private double promedioNotas;
 
@@ -45,5 +38,13 @@ public class Estudiante extends Persona{
                 "numeroEstudiante=" + numeroEstudiante +
                 ", promedioNotas=" + promedioNotas +
                 '}';
+    }
+
+    public String listadoAsignaturas(){
+        return "lista de asignaturas";
+    }
+
+    public String seminariosTiomadops() {
+        return "Seminarios tomados";
     }
 }

@@ -1,11 +1,6 @@
 package com.reto1.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.Id;
-import jakarta.persistence.MappedSuperclass;
 
-@MappedSuperclass
 public class Persona {
     private String nombre;
     private String numeroCelular;
@@ -41,7 +36,9 @@ public class Persona {
         this.correoElectronico = correoElectronico;
     }
 
-
+    public String comprarPaseEstacionamiento(){
+        return "pase comprado";
+    }
 
     public Persona(){}
 }
